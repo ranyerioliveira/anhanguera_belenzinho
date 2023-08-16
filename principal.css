@@ -1,31 +1,69 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 body{
     background-color: rgba(231, 79, 23, 0.986);
 }
+
+/* cabeçalho */
+
 header{
-    margin: 9px;
+    margin: 0 auto;
     width: 413px;
     height: 171px;
     text-align: center;
 }
 
+/* Foto do predio */
 .predio_anhanguera{
     height: 300px;
     width: 310px;
     border-radius:50%;
-    right: 270px; 
-    
-    
+    /* right: 270px;  */  
 }
+
+/* Bloco do conteudo */
 main{
     background-color: aliceblue;
     margin: 140px 50px 0 50px;
     padding: 20px;
+    border-radius: 15px;
+}
+
+.menu_principal{
+    text-align: center;
+    height: 300px;
+    padding: 15px;
+    margin: 1px 1px 0px 1px;
+
+}
+
+.menu{
+    background-color: rgba(233, 86, 33, 0.911);
+    border: 1px solid black;
+    width: 501px;
+    height: 29px;
+    margin: 0 auto;
+    padding: 26px;
+    border-radius: 10px;
+}
+
+menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+/* Rodapé */
+
+footer{
+    text-align: center;
+    margin: 87px 0px 0px 0px;
+    color: white;
+    font-size: 13px;
 }
 
 .logo{
-    width: 215px;
-    position: absolute;
-    right: 423px;
+    text-align: center;
 }
 .logo_anhanguera{
     border-radius: 50%;
