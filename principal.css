@@ -1,0 +1,15 @@
+body{
+    height: 100%;
+    position: relative;
+}
+
+.img_cabeçalho img{
+    height: 300px;
+    width: 310px;
+    border-radius:50%;
+    position: absolute;
+    right: 183px;
+}
+main{
+
+}
