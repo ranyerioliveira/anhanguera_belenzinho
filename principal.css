@@ -1,15 +1,33 @@
 body{
-    height: 100%;
-    position: relative;
+    background-color: rgba(231, 79, 23, 0.986);
+}
+header{
+    margin: 9px;
+    width: 413px;
+    height: 171px;
+    text-align: center;
 }
 
-.img_cabeçalho img{
+.predio_anhanguera{
     height: 300px;
     width: 310px;
     border-radius:50%;
-    position: absolute;
-    right: 183px;
+    right: 270px; 
+    
+    
 }
 main{
-    
+    background-color: aliceblue;
+    margin: 140px 50px 0 50px;
+    padding: 20px;
+}
+
+.logo{
+    width: 215px;
+    position: absolute;
+    right: 423px;
+}
+.logo_anhanguera{
+    border-radius: 50%;
+    width: 100px;
 }
