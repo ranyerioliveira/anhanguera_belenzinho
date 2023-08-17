@@ -22,6 +22,10 @@ header{
     border-radius: 50%;
 }
 
+section{
+    padding: 1px 1px 1px 1px;
+}
+
 footer{
     text-align: center;
     margin: 87px 0px 0px 0px;
