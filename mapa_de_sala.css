@@ -10,33 +10,6 @@ header{
     text-align: center;
 }
 
-.logo_coodernacao{
+.logo_mapa_de_sala{
     border-radius: 50%;
-}
-
-main{
-    position: relative;
-}
-
-.coodernadores_linha{
-    text-align: center;
-    display: flex;
-    margin: 175px 1px 1px 15px;
-   
-    
-}
-
-
-
-
-
-
-
-
-
-footer{
-    text-align: center;
-    margin: 87px 0px 0px 0px;
-    color: white;
-    font-size: 13px;
 }
