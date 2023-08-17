@@ -5,3 +5,23 @@ body{
     /* background-color: rgba(243, 124, 13, 0.986); */
     background-image: linear-gradient(to right, rgba(243, 124, 13, 0.986), rgba(66, 66, 66, 0.473));
 }
+
+header{
+    text-align: center;
+}
+
+.logo_coodernacao{
+    border-radius: 50%;
+}
+
+main{
+    position: relative;
+}
+
+.coodernadores_linha{
+    text-align: center;
+    display: flex;
+    margin: 175px 1px 1px 15px;
+   
+    
+}
