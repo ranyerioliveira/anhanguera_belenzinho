@@ -2,7 +2,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body{
-    background-color: rgba(231, 79, 23, 0.986);
+    background-color: rgba(243, 124, 13, 0.986);
 }
 
 /* cabeçalho */
@@ -39,13 +39,17 @@ main{
 }
 
 .menu{
-    background-color: rgba(233, 86, 33, 0.911);
-    border: 1px solid black;
+    background-color: rgba(243, 124, 13, 0.986);
+    /* border: 1px solid black; */
     width: 501px;
     height: 29px;
     margin: 0 auto;
     padding: 26px;
     border-radius: 10px;
+}
+.menu:hover{
+    background-color: rgba(240, 68, 6, 0.781);
+    
 }
 
 menu a{
