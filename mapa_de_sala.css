@@ -14,19 +14,27 @@ header{
     border-radius: 50%;
 }
 
-menu{
-    display: block;
-    /* position: relative; */
-    /* width: 400px;
-    height: 200px; */
-    text-align: center;
+.container-mapa{
+    padding: 5rem 0;
 }
 
-menu div{
+.container-mapa ul{
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.container-mapa li{
     background-color: aliceblue;
-    /* text-align: center; */
-    /* position: absolute; */
-    /* display: inline; */
-     width: 400px;
+    flex: 1 1 200px;
+    list-style: none;
+    text-align: center;
+    padding: 20px
     
+}
+
+.container-mapa a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
 }
