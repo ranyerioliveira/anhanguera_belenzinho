@@ -13,3 +13,20 @@ header{
 .logo_mapa_de_sala{
     border-radius: 50%;
 }
+
+menu{
+    display: block;
+    /* position: relative; */
+    /* width: 400px;
+    height: 200px; */
+    text-align: center;
+}
+
+menu div{
+    background-color: aliceblue;
+    /* text-align: center; */
+    /* position: absolute; */
+    /* display: inline; */
+     width: 400px;
+    
+}
