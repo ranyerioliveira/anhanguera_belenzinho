@@ -2,7 +2,8 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body{
-    background-color: rgba(243, 124, 13, 0.986);
+    /* background-color: rgba(243, 124, 13, 0.986); */
+    background-image: linear-gradient(to right, rgba(243, 124, 13, 0.986), rgba(66, 66, 66, 0.473));
 }
 
 /* cabeçalho */
@@ -24,7 +25,7 @@ header{
 
 /* Bloco do conteudo */
 main{
-    background-color: aliceblue;
+    background-color: rgba(193, 194, 196, 0.356);
     margin: 140px 50px 0 50px;
     padding: 20px;
     border-radius: 15px;
