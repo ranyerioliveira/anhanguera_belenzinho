@@ -30,6 +30,7 @@ main{
     padding: 20px;
     border-radius: 15px;
     
+    
 }
 
 .menu_principal{
@@ -61,6 +62,11 @@ menu a{
     text-decoration: none;
     color: white;
     font-size: 30px;
+}
+
+.informacoes{
+    
+
 }
 /* Rodapé */
 
