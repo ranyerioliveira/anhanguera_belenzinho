@@ -65,8 +65,17 @@ menu a{
 }
 
 .informacoes{
-    
+    margin-top: 173px;
 
+}
+
+.comunicados h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.comunicados p{
+    margin-bottom: 30px;
 }
 /* Rodapé */
 
