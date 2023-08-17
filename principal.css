@@ -29,6 +29,7 @@ main{
     margin: 140px 50px 0 50px;
     padding: 20px;
     border-radius: 15px;
+    
 }
 
 .menu_principal{
@@ -41,7 +42,6 @@ main{
 
 .menu{
     background-color: rgba(243, 124, 13, 0.986);
-    /* border: 1px solid black; */
     width: 501px;
     height: 29px;
     margin: 0 auto;
@@ -49,9 +49,13 @@ main{
     border-radius: 10px;
 }
 .menu:hover{
-    background-color: rgba(240, 68, 6, 0.781);
-    
+    background-color: rgba(193, 194, 196, 0.356);    
 }
+
+a:hover{
+    color: black;
+}
+
 
 menu a{
     text-decoration: none;
