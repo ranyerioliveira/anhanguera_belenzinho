@@ -9,8 +9,22 @@ body{
 
 main{
     background-color: rgba(193, 194, 196, 0.356);
-    margin: 140px 50px 0 50px;
-    padding: 20px;
+    margin: 45px 50px 0 50px;
+    padding: 42px 4px 22px 89px;
     border-radius: 15px;
     
+}
+header{
+    text-align: center;
+}
+
+.logo_antendimento{
+    border-radius: 50%;
+}
+
+footer{
+    text-align: center;
+    margin: 87px 0px 0px 0px;
+    color: white;
+    font-size: 13px;
 }
