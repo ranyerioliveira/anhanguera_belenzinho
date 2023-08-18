@@ -30,6 +30,20 @@ section{
     
 }
 
+.img-atendimento{
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.outros-atendimento{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.outros-atendimento h3{
+    margin: 30px 0px 28px 0px;
+}
+
 footer{
     text-align: center;
     margin: 87px 0px 0px 0px;
