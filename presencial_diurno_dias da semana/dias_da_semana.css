@@ -1,0 +1,21 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    /* background-color: rgba(243, 124, 13, 0.986); */
+    background-image: linear-gradient(to right, rgba(243, 124, 13, 0.986), rgba(66, 66, 66, 0.473));
+}
+
+header{
+    text-align: center;
+}
+
+.logo_mapa_de_sala{
+    border-radius: 50%;
+}
+footer{
+    text-align: center;
+    margin: 87px 0px 0px 0px;
+    color: white;
+    font-size: 13px;
+}
