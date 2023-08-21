@@ -10,12 +10,12 @@ header{
     text-align: center;
 }
 
-main{
-    position: relative;
-    margin: 0 auto ;
+main ul{
+    
     
 }
 ul{
+    position: relative;
     
 }
 
@@ -24,7 +24,7 @@ a {
     color: black;
 }
 li{
-    margin: 36px 0px 0px 25px;
+    margin: 36px 25px 0px 25px;
     background-color: aliceblue;
     width: 214px;
     height: 41px;
@@ -32,6 +32,15 @@ li{
     text-align: center;
     padding: 27px 4px 6px 2px;
     border-radius: 5px;
+}
+
+.dias{
+    max-width: 1000px;
+    min-width: 400px;
+    position: relative;
+    left: 400px;
+    right: 400px;
+    
 }
 
 .logo_mapa_de_sala{
