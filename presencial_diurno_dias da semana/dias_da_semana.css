@@ -19,3 +19,22 @@ footer{
     color: white;
     font-size: 13px;
 }
+main{
+    margin: 0 auto;
+    
+}
+
+.materia{
+    background-color: rgba(240, 248, 255, 0.502);
+    padding-bottom: 5px;
+    border-radius: 10px;
+    
+    
+}
+h3{
+    padding: 10px;
+}
+
+li{
+    margin:9px 32px 9px 32px;;
+}
