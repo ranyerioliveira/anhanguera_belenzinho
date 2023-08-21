@@ -10,6 +10,30 @@ header{
     text-align: center;
 }
 
+main{
+    position: relative;
+    margin: 0 auto ;
+    
+}
+ul{
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+li{
+    margin: 36px 0px 0px 25px;
+    background-color: aliceblue;
+    width: 214px;
+    height: 41px;
+    list-style: none;
+    text-align: center;
+    padding: 27px 4px 6px 2px;
+    border-radius: 5px;
+}
+
 .logo_mapa_de_sala{
     border-radius: 50%;
 }
