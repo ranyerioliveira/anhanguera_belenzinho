@@ -5,6 +5,7 @@
 body{
     /* background-color: rgba(243, 124, 13, 0.986); */
     background-image: linear-gradient(to right, rgba(243, 124, 13, 0.986), rgba(66, 66, 66, 0.473));
+    width: 1000px;
 }
 
 main{
@@ -25,8 +26,10 @@ header{
 section{
     padding: 3px 2px 5px 24px;
     background-color: rgba(240, 248, 255, 0.76);
-    margin: 15px 68px 18px 1px;
+    margin: 10px 100px 34px -30px;
     border-radius: 5px;
+    width: 208px;
+    
     
 }
 
