@@ -1,18 +1,18 @@
-@media screen and (max-width:450) {
+@media screen and (max-width:450px) {
     .menu_principal{
-        width: 185px;
-        height: 53px;
-        
+        width: 270px;
     }
-}
+ }
 
 
 *{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
 }
+
 body{
-    /* background-color: rgba(243, 124, 13, 0.986); */
     background-image: linear-gradient(to right, rgba(243, 124, 13, 0.986), rgba(66, 66, 66, 0.473));
+   
 }
 
 /* cabeçalho */
@@ -47,14 +47,15 @@ main{
     height: 380px;
     padding: 15px;
     margin: 1px 1px 0px 1px;
+   
     
 
 }
 
 .menu{
     background-color: rgba(243, 124, 13, 0.986);
-    width: 501px;
-    height: 29px;
+    width: 220px;
+    height: 69px;
     margin: 0 auto;
     padding: 26px;
     border-radius: 10px;
@@ -104,4 +105,5 @@ footer{
     border-radius: 50%;
     width: 100px;
 }
+
 
