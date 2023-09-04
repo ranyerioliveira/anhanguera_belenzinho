@@ -11,8 +11,10 @@ body{
 main{
     background-color: rgba(193, 194, 196, 0.356);
     margin: 45px 50px 0 50px;
-    padding: 42px 4px 22px 89px;
+    /* padding: 42px 4px 22px 89px; */
     border-radius: 15px;
+    justify-content: center;
+    align-items: center;
     
 }
 header{
@@ -24,9 +26,9 @@ header{
 }
 
 section{
-    padding: 3px 2px 5px 24px;
+    /* padding: 3px 2px 5px 24px; */
     background-color: rgba(240, 248, 255, 0.76);
-    margin: 10px 100px 34px -30px;
+    /* margin: 10px 100px 34px -30px; */
     border-radius: 5px;
     /* width: 208px; */
     
