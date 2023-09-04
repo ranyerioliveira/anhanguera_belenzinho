@@ -10,14 +10,17 @@ header{
     text-align: center;
 }
 
-main ul{
-    
+.container-mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     
 }
-ul{
+/* ul{
     position: relative;
     
-}
+} */
 
 a {
     text-decoration: none;
@@ -25,7 +28,7 @@ a {
 }
 li{
     margin: 36px 25px 0px 25px;
-    background-color: aliceblue;
+    background-color: rgba(240, 248, 255, 0.411);
     width: 214px;
     height: 41px;
     list-style: none;
@@ -34,13 +37,19 @@ li{
     border-radius: 5px;
 }
 
+ul{
+   
+    padding: 0px 20px 0px 20px;
+   
+
+}
+
 .dias{
     max-width: 1000px;
     min-width: 400px;
-    position: relative;
-    left: 400px;
-    right: 400px;
-    
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .logo_mapa_de_sala{
