@@ -35,9 +35,12 @@ header{
 /* Bloco do conteudo */
 main{
     background-color: rgba(193, 194, 196, 0.356);
-    margin: 140px 50px 0 50px;
+    /* margin: 140px 50px 0 50px; */
     padding: 20px;
     border-radius: 15px;
+    margin-top: 150px;
+    
+   
     
     
 }
@@ -47,6 +50,8 @@ main{
     height: 380px;
     padding: 15px;
     margin: 1px 1px 0px 1px;
+    justify-content: center;
+    align-items: center;
    
     
 
