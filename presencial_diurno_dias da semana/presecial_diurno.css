@@ -45,8 +45,8 @@ ul{
 }
 
 .dias{
-    max-width: 1000px;
-    min-width: 400px;
+    /* max-width: 1000px;
+    min-width: 400px; */
     justify-content: center;
     align-items: center;
     display: flex;

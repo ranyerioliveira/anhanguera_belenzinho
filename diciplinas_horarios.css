@@ -14,7 +14,7 @@ header{
     border-radius: 50%;
 }
 
-main{
+.container-mapa{
     display: flex;
     justify-content: center;
     align-items: center;
