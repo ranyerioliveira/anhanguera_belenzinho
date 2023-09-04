@@ -15,30 +15,31 @@ header{
 }
 
 .container-mapa{
-    padding: 5rem 0;
-}
-
-.container-mapa ul{
     display: flex;
-    width: 60%;
-    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-.container-mapa li{
+ul{
+    padding: 0px 20px 0px 20px;
+    
+}
+
+li{
     background-color: rgba(240, 248, 255, 0.411);
-    flex: 1 1 300px;
     list-style: none;
+    padding: 15px;
+    margin-bottom: 10px;
     text-align: center;
-    padding: 20px;
-    border-radius: 15px 0px 15px 0px;
-    font-size: 20px;
+    border-radius: 5px;
     
 }
 
 .container-mapa a{
     text-decoration: none;
     color: black;
-    text-align: center;
+    
 }
 
 footer{
