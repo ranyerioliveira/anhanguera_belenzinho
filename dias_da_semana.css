@@ -13,14 +13,11 @@ header{
 .logo_mapa_de_sala{
     border-radius: 50%;
 }
-footer{
-    text-align: center;
-    margin: 87px 0px 0px 0px;
-    color: white;
-    font-size: 13px;
-}
+
 main{
-    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    
     
 }
 
@@ -30,6 +27,7 @@ main{
     border-radius: 10px;
     
     
+    
 }
 h3{
     padding: 10px;
@@ -37,4 +35,15 @@ h3{
 
 li{
     margin:9px 32px 9px 32px;;
+}
+
+ul{
+    padding: 8px 3px 0px 0px;
+}
+
+footer{
+    text-align: center;
+    margin: 87px 0px 0px 0px;
+    color: white;
+    font-size: 13px;
 }
