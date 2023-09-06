@@ -29,6 +29,10 @@ main{
     margin: 10px;
     
 }
+a{
+    text-decoration: wavy;
+    color: black;
+}
 h2{
     padding: 10px;
 }
