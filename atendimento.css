@@ -1,22 +1,11 @@
 *{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
 body{
     /* background-color: rgba(243, 124, 13, 0.986); */
     background-image: linear-gradient(to right, rgba(243, 124, 13, 0.986), rgba(66, 66, 66, 0.473));
-    width: 1000px;
 }
 
-main{
-    background-color: rgba(193, 194, 196, 0.356);
-    margin: 45px 50px 0 50px;
-    /* padding: 42px 4px 22px 89px; */
-    border-radius: 15px;
-    justify-content: center;
-    align-items: center;
-    
-}
 header{
     text-align: center;
 }
@@ -25,25 +14,57 @@ header{
     border-radius: 50%;
 }
 
-section{
-    /* padding: 3px 2px 5px 24px; */
-    background-color: rgba(240, 248, 255, 0.76);
-    /* margin: 10px 100px 34px -30px; */
-    border-radius: 5px;
-    /* width: 208px; */
+main{
+    justify-content: center;
+    align-items: center;
     
     
+}
+
+.atendimento{
+    background-color: rgba(240, 248, 255, 0.502);
+    padding-bottom: 5px;
+    border-radius: 10px; 
+    text-align: center;   
+    margin: 10px;
+    
+}
+h2{
+    padding: 10px;
+}
+
+li{
+    margin:9px 32px 9px 32px;
+    list-style: none;
+}
+
+ul{
+    padding: 8px 3px 0px 0px;
+}
+
+footer{
+    text-align: center;
+    margin: 87px 0px 0px 0px;
+    color: white;
+    font-size: 13px;
 }
 
 .img-atendimento{
     max-width: 400px;
     max-height: 400px;
+    border-radius: 20px;
+} 
+
+.img_central{
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 20px;
 }
 
 .outros-atendimento{
     text-align: center;
     margin: 0 auto;
-}
+} */
 
 .outros-atendimento h3{
     margin: 30px 0px 28px 0px;
