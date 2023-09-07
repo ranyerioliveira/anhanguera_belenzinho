@@ -34,6 +34,15 @@ header{
     /* right: 270px;  */  
 }
 
+.logo{
+    text-align: center;
+}
+.logo_anhanguera{
+    border-radius: 50%;
+    width: 100px;
+}
+
+
 /* Bloco do conteudo */
 main{
     background-color: rgba(193, 194, 196, 0.356);
@@ -85,6 +94,9 @@ menu a{
 
 .informacoes{
     margin-top: 173px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
 }
 
@@ -93,9 +105,18 @@ menu a{
     margin-bottom: 30px;
 }
 
-.comunicados p{
-    margin-bottom: 30px;
+.comunicados{
+    padding-top: 1px;
 }
+
+
+.img-comunicado{
+    max-width: 300px;
+    max-height: 300px;
+
+}
+
+
 /* Rodapé */
 
 footer{
@@ -105,12 +126,5 @@ footer{
     font-size: 13px;
 }
 
-.logo{
-    text-align: center;
-}
-.logo_anhanguera{
-    border-radius: 50%;
-    width: 100px;
-}
 
 
