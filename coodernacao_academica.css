@@ -26,13 +26,20 @@ main{
 .coodernadores_linha{
     text-align: center;
     display: flex;
-    margin: 175px 1px 1px 15px;
-    
-    
-   
-    
+
+    margin: 175px 1px 1px 15px;    
+}
+.coodernadores{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
 }
 
+.container{
+    /* background-color: white;
+    margin: 1px 1px 1px 1px ; */
+    
+}
 
 footer{
     text-align: center;
@@ -41,11 +48,7 @@ footer{
     font-size: 13px;
 }
 
-.coodernadores{
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-}
+
 h4, p{
     font-size: 12px;
 }
