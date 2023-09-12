@@ -10,7 +10,7 @@ header{
     text-align: center;
 }
 
-.logo_mapa_de_sala{
+.logo_coodernacao{
     border-radius: 50%;
 }
 
@@ -20,7 +20,7 @@ header{
     border-radius: 15%;
 }
 .container{
-    background-color: rgba(240, 248, 255, 0.411);
+    
     /* display: flex; */
     border-radius: 15px;
     justify-content: center;
@@ -28,13 +28,31 @@ header{
     padding-bottom: 20px;
     
 }
+
+figure{
+    margin: 59px 27px 47px 6px;
+}
+
+.diretor{
+    margin: -3px 28px 12px 3px;;
+}
 .teste{
     display: flex;
-    margin: 32px -1px 13px -23px;
+    margin: 25px 1px 25px 1px;
     padding: 18px 1px 1px 1px;
+    background-color: rgba(240, 248, 255, 0.411);
+    border-radius: 10px;
     
      
 }
+
+li{
+    font-size: 14px;
+}
+
+
+
+
 
 footer{
     text-align: center;
@@ -43,9 +61,7 @@ footer{
     font-size: 13px;
 }
 
-li{
-    font-size: 14px;
-}
+
 
 
 
