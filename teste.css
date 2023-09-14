@@ -1,0 +1,86 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    /* background-color: rgba(243, 124, 13, 0.986); */
+    background-image: linear-gradient(to right, rgba(243, 124, 13, 0.986), rgba(66, 66, 66, 0.473));
+}
+
+header{
+    text-align: center;
+}
+
+.logo_mapa_de_sala{
+    border-radius: 50%;
+}
+
+.container-mapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+ul{
+    padding: 0px 20px 0px 20px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+li{
+    background-color: rgba(240, 248, 255, 0.411);
+    list-style: none;
+    padding: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 5px;
+    width: 190px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container-mapa a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+button{
+    
+}
+
+footer{
+    text-align: center;
+    margin: 87px 0px 0px 0px;
+    color: white;
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    text-align: center;
+    margin: 87px 0px 0px 0px;
+    color: white;
+    font-size: 13px;
+}
+
