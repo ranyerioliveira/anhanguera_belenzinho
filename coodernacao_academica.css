@@ -48,11 +48,8 @@ figure{
 
 li{
     font-size: 14px;
+    list-style: none;
 }
-
-
-
-
 
 footer{
     text-align: center;
@@ -60,6 +57,20 @@ footer{
     color: white;
     font-size: 13px;
 }
+
+@media screen and (max-width:360px) {
+    .teste{
+        font-size: 11px;
+    }
+    li{
+        font-size: 11px;
+    }
+    p{
+        font-size: 11px;
+    }
+}
+
+
 
 
 
