@@ -131,6 +131,14 @@ footer{
     color: white;
 }
 
+#greve{
+    font-size: 35px;
+    color: red;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
 @media screen and (max-width: 450px){
     .figura{
         display: flex;
