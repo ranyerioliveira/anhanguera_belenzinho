@@ -1,1 +1,1 @@
- window.alert("Devido à greve (CPTM, Metrô e SABESP), não teremos aulas hoje (03/10/23) no período noturno.")
+//  window.alert("Devido à greve (CPTM, Metrô e SABESP), não teremos aulas hoje (03/10/23) no período noturno.")
