@@ -58,8 +58,8 @@ main{
 
 .menu_principal{
     text-align: center;
-    height: 380px;
-    padding: 15px;
+    height: 147px;
+    padding: 28px;
     margin: 1px 1px 0px 1px;
     justify-content: center;
     align-items: center;
@@ -92,8 +92,25 @@ menu a{
     font-size: 30px;
 }
 
+button{
+    border-radius: 10px;
+    background-color: rgba(243, 124, 13, 0.986);
+    border-color: rgba(193, 194, 196, 0.356); 
+    height: 82px;
+}
+
+.btn_mapa_sala{
+    border-radius: 10px;
+    background-color: rgba(243, 124, 13, 0.986);
+    border-color: rgba(193, 194, 196, 0.356); 
+    height: 45px;
+    width: 272px;
+}
+
+/* informações */
+
 .informacoes{
-    margin-top: 173px;
+    margin-top: 100px;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -144,8 +161,61 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
+        
+    }
+    .btn_mapa_sala{
+        border-radius: 10px;
+        background-color: rgba(243, 124, 13, 0.986);
+        border-color: rgba(193, 194, 196, 0.356); 
+        height: auto;
+        width: auto;
+        padding: 3px 86px 1px 101px;
     }
 }
+
+@media screen and (min-width: 375px){
+    .figura{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .btn_mapa_sala{
+        border-radius: 10px;
+        background-color: rgba(243, 124, 13, 0.986);
+        border-color: rgba(193, 194, 196, 0.356); 
+        height: auto;
+        width: auto;
+        padding: 3px 86px 1px 101px;
+    }
+    .informacoes{
+        margin-top: 136px ;
+    }
+}
+
+@media screen and (min-width: 360px){
+    .figura{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .btn_mapa_sala{
+        border-radius: 10px;
+        background-color: rgba(243, 124, 13, 0.986);
+        border-color: rgba(193, 194, 196, 0.356); 
+        height: auto;
+        width: auto;
+        padding:7px 65px 2px 99px;
+        
+    }
+    .informacoes{
+        margin-top: 136px ;
+    }
+    
+   
+}
+
 
 
 
