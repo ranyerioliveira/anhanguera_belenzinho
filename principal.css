@@ -99,13 +99,13 @@ button{
     height: 82px;
 }
 
-.btn_mapa_sala{
+/* .btn_mapa_sala{
     border-radius: 10px;
     background-color: rgba(243, 124, 13, 0.986);
     border-color: rgba(193, 194, 196, 0.356); 
     height: 45px;
     width: 272px;
-}
+} */
 
 /* informações */
 
@@ -163,14 +163,14 @@ footer{
         align-items: center;
         
     }
-    .btn_mapa_sala{
+    /* .btn_mapa_sala{
         border-radius: 10px;
         background-color: rgba(243, 124, 13, 0.986);
         border-color: rgba(193, 194, 196, 0.356); 
         height: auto;
         width: auto;
         padding: 3px 86px 1px 101px;
-    }
+    } */
 }
 
 @media screen and (min-width: 375px){
@@ -180,14 +180,14 @@ footer{
         align-items: center;
         
     }
-    .btn_mapa_sala{
+    /* .btn_mapa_sala{
         border-radius: 10px;
         background-color: rgba(243, 124, 13, 0.986);
         border-color: rgba(193, 194, 196, 0.356); 
         height: auto;
         width: auto;
         padding: 3px 86px 1px 101px;
-    }
+    } */
     .informacoes{
         margin-top: 136px ;
     }
@@ -200,7 +200,7 @@ footer{
         align-items: center;
         
     }
-    .btn_mapa_sala{
+    /* .btn_mapa_sala{
         border-radius: 10px;
         background-color: rgba(243, 124, 13, 0.986);
         border-color: rgba(193, 194, 196, 0.356); 
@@ -208,7 +208,7 @@ footer{
         width: auto;
         padding:7px 65px 2px 99px;
         
-    }
+    } */
     .informacoes{
         margin-top: 136px ;
     }
