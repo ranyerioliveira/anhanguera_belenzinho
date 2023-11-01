@@ -53,6 +53,10 @@ footer{
     font-size: 13px;
 }
 
+.texto_pequeno{
+    font-size: 10px;
+}
+
 .img-atendimento{
     max-width: 400px;
     max-height: 400px;
