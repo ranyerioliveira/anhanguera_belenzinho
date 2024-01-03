@@ -42,6 +42,9 @@ body{
     flex-direction: column;
     text-align: center;
 }
+ul{
+    list-style: none;
+}
 
 
  /* Estilo para esconder a div inicialmente */
