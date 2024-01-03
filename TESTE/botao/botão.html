@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão e Div</title>
+    <link rel="stylesheet" href="botao.css">
+    <script src="botao.js" defer></script>
+   
+</head>
+<body>
+
+   <div id="container">
+       <!-- Botão 1 -->
+       <button onclick="alternarInformacao('periodoPresencial1')">Presencial</button>
+       <!-- Div de Informação 1 -->
+       <div class="informacaoDiv" id="periodoPresencial1">
+        <!-- div com a segunda informação -->
+        <button onclick="alternarInformacao('matutinoPresecnail')">Matutino</button>
+        <div class="informacaoDiv" id="matutinoPresecnail">
+            <button onclick="alternarInformacao('segunda_presencial_matutino')">Segunda-feira</button>
+            <div class="informacaoDiv" id="segunda_presencial_matutino">
+                <div class="materia">
+                    <h4>Programaçã orientada a objeto</h4>
+                    <li>Sala:202</li>
+                    <li>Docente: Chico</li>
+                </div>
+                <br>
+                <div class="materia">
+                    <h4>Programaçã orientada a objeto</h4>
+                    <li>Sala:202</li>
+                    <li>Docente: Chico</li>
+                </div>
+            </div>
+        </div><br>
+        
+
+        
+       </div><br>
+
+
+
+
+
+
+       <!-- Botão 2 -->
+       <button onclick="alternarInformacao('informacaoDiv#')">Mostrar/Ocultar Informação 2</button>
+       <!-- Div de Informação 2 -->
+       <div class="informacaoDiv" id="informacaoDiv#">
+           <p>Esta é a informação da Div 2.</p>
+       </div><br>
+       
+
+   </div>
+
+</body>
+</html>
