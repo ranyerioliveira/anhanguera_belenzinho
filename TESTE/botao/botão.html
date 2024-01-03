@@ -12,20 +12,24 @@
 
    <div id="container">
        <!-- Botão 1 -->
-       <button onclick="alternarInformacao('periodoPresencial1')">Presencial</button>
+       <button class="btnMapaDeSala" onclick="alternarInformacao('periodoPresencial1')">Presencial</button>
        <!-- Div de Informação 1 -->
        <div class="informacaoDiv" id="periodoPresencial1">
         <!-- div com a segunda informação -->
-        <button onclick="alternarInformacao('matutinoPresecnail')">Matutino</button>
+        <button class="btnDentroDoMapa" onclick="alternarInformacao('matutinoPresecnail')">Matutino</button>
+
         <div class="informacaoDiv" id="matutinoPresecnail">
-            <button onclick="alternarInformacao('segunda_presencial_matutino')">Segunda-feira</button>
+            <button class="btnDentroDoMapa" onclick="alternarInformacao('segunda_presencial_matutino')">Segunda-feira</button>
+
             <div class="informacaoDiv" id="segunda_presencial_matutino">
                 <div class="materia">
                     <h4>Programaçã orientada a objeto</h4>
                     <li>Sala:202</li>
                     <li>Docente: Chico</li>
                 </div>
+
                 <br>
+
                 <div class="materia">
                     <h4>Programaçã orientada a objeto</h4>
                     <li>Sala:202</li>
@@ -44,7 +48,7 @@
 
 
        <!-- Botão 2 -->
-       <button onclick="alternarInformacao('informacaoDiv#')">Mostrar/Ocultar Informação 2</button>
+       <button class="btnMapaDeSala" onclick="alternarInformacao('informacaoDiv#')">EAD</button>
        <!-- Div de Informação 2 -->
        <div class="informacaoDiv" id="informacaoDiv#">
            <p>Esta é a informação da Div 2.</p>

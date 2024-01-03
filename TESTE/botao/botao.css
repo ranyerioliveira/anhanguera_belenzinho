@@ -14,15 +14,25 @@ body{
 
 }
 
-button{
+/* botão que dos periodos */
+
+.btnMapaDeSala{
     background-color: rgb(255, 255, 255);
     border-radius: 8px;
     border: none;
     padding:16px
 }
-.informacaoDiv{
-    
-}
+
+/* botão do periodo e do dia  */
+
+.btnDentroDoMapa{
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    border: none;
+    padding:16px;
+    width: 200px;
+} 
+
 
 .materia{
     background-color: rgb(244, 255, 240);
