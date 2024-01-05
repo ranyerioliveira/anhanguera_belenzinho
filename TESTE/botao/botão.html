@@ -1,387 +1,69 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Botão e Div</title>
-    <link rel="stylesheet" href="botao.css">
-    <script src="botao.js" defer></script>
-   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botão e Div em JavaScript</title>
+  <style>
+    /* Estilo para ocultar a div inicialmente */
+    #conteudo {
+      display: none;
+    }
+  </style>
 </head>
 <body>
 
-   <div id="container">
+<!-- Botão principal -->
+<button onclick="mostrarConteudo()">Mostrar Conteúdo</button>
 
-        <!-- PRESENCIAL PERIODO MATUTINO -->
-    
-       <!-- Botão 1 -->
-       <button class="btnMapaDeSala" onclick="alternarInformacao('periodoPresencial1')">Presencial</button>
-       <!-- Div de Informação 1 -->
-       <div class="informacaoDiv" id="periodoPresencial1">
-        <!-- div com a segunda informação -->
-        <button class="btnDentroDoMapa" onclick="alternarInformacao('matutinoPresecnail')">Matutino</button>
+<!-- Div que será exibida quando o botão for clicado -->
+<div id="conteudo">
+  <!-- Botões e informações adicionais aqui -->
+  <button onclick="alternarInformacao('Informação 1')">Botão 1</button>
+  <button onclick="alternarInformacao('Informação 2')">Botão 2</button>
+  <div id="informacoes"></div>
+</div>
 
-        <div class="informacaoDiv" id="matutinoPresecnail">
-            <button class="btnDentroDoMapa" onclick="alternarInformacao('segunda_presencial_matutino')">Segunda-feira</button>
+<script>
+  // Variáveis de controle de estado dos botões
+  var estadoBotao1 = false;
+  var estadoBotao2 = false;
 
-            <div class="informacaoDiv" id="segunda_presencial_matutino">
-                <ul>
-                    <div class="materia">
-                        <h3>Cien. Morfofuncionais dos Sistemas Nervoso e Cardiorrespiratorio</h3>
-                        <li>Sala:204</li>
-                        <li>Docente: Erica Fernanda Lizão </li>
-                    </div><br>
-                    <div class="materia">
-                        <h3>Direito Penal - Teoria das Penas e Execucao Penal</h3>
-                        <li>Sala:222</li>
-                        <li>Docente: Anderson Akira Watanabe </li>
-                    </div><br>
-                    <div class="materia">
-                        <h3>Fundamentos Tecnicos de Enfermagem</h3>
-                        <li>Sala:203</li>
-                        <li>Docente: Rodrigo Martins Pereira </li>
-                    </div><br>
-                    <div class="materia">
-                        <h3>Modelo Multiportas e Meios Integradores de Resolucao de Conflitos</h3>
-                        <li>Sala:201</li>
-                        <li>Docente: Gabriel Martins Raymundo </li>
-                    </div><br>
-                    <div class="materia">
-                        <h3>Saude Mental</h3>
-                        <li>Sala:3</li>
-                        <li>Docente: Regina Ribeiro Das Neves </li>
-                    </div><br>
-                    <div class="materia">
-                        <h3>Teorias e Tecnicas Psicoterapicas Gerais</h3>
-                        <li>Sala:202</li>
-                        <li>Docente: Andrea Fernanda da Silva Veloso </li>
-                    </div>
-                </ul>
-            </div>
+  // Função para mostrar/ocultar a div de conteúdo
+  function mostrarConteudo() {
+    var conteudoDiv = document.getElementById('conteudo');
+    conteudoDiv.style.display = (conteudoDiv.style.display === 'none') ? 'block' : 'none';
+    // Ocultar informações ao mostrar/ocultar a div de conteúdo
+    ocultarInformacao();
+  }
 
-            <div class="informacaoDiv" id="matutinoPresecnail">
-                <button class="btnDentroDoMapa" onclick="alternarInformacao('terca_presencial_matutino')">Terça-feira</button>
-    
-                <div class="informacaoDiv" id="terca_presencial_matutino">
-                    <ul>
-                        <div class="materia">
-                            <h3>Cien. Morfofuncionais dos Sistemas Nervoso e Cardiorrespiratorio</h3>
-                            <li>Sala:204</li>
-                            <li>Docente: Erica Fernanda Lizão </li>
-                        </div><br>
-                        <div class="materia">
-                            <h3>Direito Penal - Teoria das Penas e Execucao Penal</h3>
-                            <li>Sala:222</li>
-                            <li>Docente: Anderson Akira Watanabe </li>
-                        </div><br>
-                        <div class="materia">
-                            <h3>Fundamentos Tecnicos de Enfermagem</h3>
-                            <li>Sala:203</li>
-                            <li>Docente: Rodrigo Martins Pereira </li>
-                        </div><br>
-                        <div class="materia">
-                            <h3>Modelo Multiportas e Meios Integradores de Resolucao de Conflitos</h3>
-                            <li>Sala:201</li>
-                            <li>Docente: Gabriel Martins Raymundo </li>
-                        </div><br>
-                        <div class="materia">
-                            <h3>Saude Mental</h3>
-                            <li>Sala:3</li>
-                            <li>Docente: Regina Ribeiro Das Neves </li>
-                        </div><br>
-                        <div class="materia">
-                            <h3>Teorias e Tecnicas Psicoterapicas Gerais</h3>
-                            <li>Sala:202</li>
-                            <li>Docente: Andrea Fernanda da Silva Veloso </li>
-                        </div>
-                    </ul>
-                </div>
+  // Função para alternar mostrar/ocultar informações
+  function alternarInformacao(info) {
+    var informacoesDiv = document.getElementById('informacoes');
+    // Alternar o estado do botão
+    if (info === 'Informação 1') {
+      estadoBotao1 = !estadoBotao1;
+    } else if (info === 'Informação 2') {
+      estadoBotao2 = !estadoBotao2;
+    }
 
-          
-                
+    // Exibir ou ocultar informações com base no estado do botão
+    if ((info === 'Informação 1' && estadoBotao1) || (info === 'Informação 2' && estadoBotao2)) {
+      informacoesDiv.innerHTML = 'Informação selecionada: ' + info;
+    } else {
+      informacoesDiv.innerHTML = ''; // Limpar o conteúdo da div
+    }
+  }
 
-            
-        </div><br><br>
-
-
-        <!-- PERIODO NOTURNO PRESENCIAL -->
-        
-        <!-- Segunda feira -->
-        <button class="btnMapaDeSala" onclick="alternarInformacao('periodoPresencial2')">Noturno</button>
-        <div class="informacaoDiv" id="periodoPresencial2">
-
-         <!-- div com a segunda informação -->
-         <button class="btnDentroDoMapa" onclick="alternarInformacao('segunda_presencial_noturno')">Segunda-feira</button>
- 
-             <div class="informacaoDiv" id="segunda_presencial_noturno">
-                 <ul>
-                    <div class="materia">
-                        <h3>Administracao Aplicada a Gastronomia</h3>
-                        <li>Sala: A - 111</li>
-                        <li>Horário: 21:00</li>
-                        <li>Docente: VERENA REIMER</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Argumentacao e Pesquisa Juridica</h3>
-                        <li>Sala: A - 222</li>
-                        <li>Horário: 19:00</li>
-                        <li>Docente: GABRIEL MARTINEZ RAYMUNDO</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Bacteriologia Clinica</h3>
-                        <li>Sala: A - 102</li>
-                        <li>Horário: 19:00</li>
-                        <li>Docente: LETICIA MONICA COIMBRA GAZIOLA</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Calculo Diferencial e Integral II</h3>
-                        <li>Sala: A - 217</li>
-                        <li>Horário: 19:00</li>
-                        <li>Docente: FELIPE DARIEL PINTO</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Cien. Morfofuncionais dos Sistemas Nervoso e Cardiorrespiratorio</h3>
-                        <li>Sala: A - 204</li>
-                        <li>Horário: 19:00</li>
-                        <li>Docente: ERICA FERNANDA LIZAO POZZATO LOPES</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Cinesiologia e Biomecanica</h3>
-                        <li>Sala: A - 15</li>
-                        <li>Horário: 19:00</li>
-                        <li>Docente: RODRIGO MARTINS PEREIRA</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Clinica Ampliada em Saude Mental</h3>
-                        <li>Sala: A - 213</li>
-                        <li>Horário: 19:00</li>
-                        <li>Docente: ANDREA MARINHO</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Desenho Auxiliado por Computador</h3>
-                        <li>Sala: A - 219</li>
-                        <li>Horário: 19:00</li>
-                        <li>Docente: FELIPE SASSARRAO DOS SANTOS</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Direito Administrativo - Administracao Publica</h3>
-                        <li>Sala: A - 106</li>
-                        <li>Horário: 19:00</li>
-                        <li>Docente: ELIANA BERTA FERNANDES CORRAL</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Direito Civil - Contratos</h3>
-                        <li>Sala: A - 112</li>
-                        <li>Horário: 19:00</li>
-                        <li>Docente: ELAINE KAZUMI TAKARA</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Direito Processual Civil - Conhecimento</h3>
-                        <li>Sala: A - 214</li>
-                        <li>Horário: 19:00</li>
-                        <li>Docente: ROBERTO PELLINI JUNIOR</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Educacao e Diversidade</h3>
-                        <li>Sala: A - 113</li>
-                        <li>Horário: 19:00</li>
-                        <li>Docente: ANDERSON SANTOS DE JESUS</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Fisioterapia na Saude do Idoso</h3>
-                        <li>Sala: A - 6</li>
-                        <li>Horário: 21:00</li>
-                        <li>Docente: Alex Sandro</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Garde Manger - Cozinha Fria</h3>
-                        <li>Sala: A - 103</li>
-                        <li>Horário: 19:00</li> 
-                        <li>Docente: FELIPE SILVA CAMPOS</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Gestao de Projetos</h3>
-                        <li>Sala: A - 107</li>
-                        <li>Horário: 19:00</li> 
-                        <li>Docente: WELLINGTON FERNANDES DOS SANTOS</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Gestao Mercadologica na Era Digital</h3>
-                        <li>Sala: A - 109</li>
-                        <li>Horário: 19:00</li> 
-                        <li>Docente: MARCELO PORTUGAL BASILE</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Matrizes do Pensamento em Psicologia - Psicanalise</h3>
-                        <li>Sala: A - 221</li>
-                        <li>Horário: 19:00</li> 
-                        <li>Docente: THAMARA TEIXEIRA DE CASTRO</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Metodologia da Pesquisa em Psicologia</h3>
-                        <li>Sala: A - 2</li>
-                        <li>Horário: 19:00</li> 
-                        <li>Docente: ANDRE VICTOR CORDEIRO</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Metodos Quantitativos</h3>
-                        <li>Sala: A - 202</li>
-                        <li>Horário: 19:00</li>
-                        <li>Docente: VANDERLEI FERREIRA DE SENA</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Nutricao, Exercicio Fisico  Estetica</h3>
-                        <li>Sala: A - 2</li>
-                        <li>Horário: 21:00</li>
-                        <li>Docente: ANDRE VICTOR CORDEIRO</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Planejamento Estrategico</h3>
-                        <li>Sala: A - 3</li>
-                        <li>Horário: 19:00</li>
-                        <li>Docente: CRISTINA CARVALHO ALVES</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Planejamento Fisico</h3>
-                        <li>Sala: A - 220</li>
-                         <li>Horário: 19:00</li>
-                        <li>Docente: THAIS GOLDBARD YOSHIURA</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Planejamento, Controle e Gerenciamento de Materiais</h3>
-                        <li>Sala: A - 111</li>
-                         <li>Horário: 19:00</li>
-                        <li>Docente:EDSON DE SOUZA VIANA</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Praticas Aplicadas em Bioquimica e Imunologia Clinica</h3>
-                        <li>Sala: A - 210</li>
-                         <li>Horário: 19:00</li>
-                        <li>Docente:Camilla Estevão França</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Praticas Educativas em Espacos Nao Escolares</h3>
-                        <li>Sala: A - 211</li>
-                         <li>Horário: 19:00</li>
-                        <li>Docente:GLEDER MARICATO</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Processo de Cuidar em Enfermagem</h3>
-                        <li>Sala: A - 5</li>
-                         <li>Horário: 19:00</li>
-                        <li>Docente:ABNE AYMON SILVA DO NASCIMENTO</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Processos Psicologicos Basicos</h3>
-                        <li>Sala: A - 11</li> 
-                        <li>Horário: 19:00</li>
-                        <li>Docente:ANDREA FERNANDA DA SILVA VELOSO</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Programação em Banco de Dados</h3>
-                        <li>Sala: A - 209</li>
-                        <li>Horário: 19:00</li>
-                        <li>Docente:Paulo Pereira</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Projeto de Sistemas</h3>
-                        <li>Sala: A - 209</li>
-                        <li>Horário: 21:00</li>
-                        <li>Docente:Paulo Pereira</li>
-                    </div><br>
-
-        
-                    <div class="materia">
-                        <h3>Propedeutica Clinica Odontologica I</h3>
-                        <li>Sala: A - 205</li>
-                        <li>Horário: 19:00</li>
-                        <li>Docente:ALEXSANDRA SHIZUE IWAMOTO</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Protese e Ortese</h3>
-                        <li>Sala: A - 101</li>
-                        <li>Horário: 19:00</li>
-                        <li>Docente:DANIEL DE SOUZA SILVA</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Psicoterapia Infanto-Juvenil</h3>
-                        <li>Sala: A - 212</li>
-                        <li>Horário: 19:00</li>
-                        <li>Docente:FERNANDA PINHEIRO MAZZANTE</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Saúde do Trabalhador</h3>
-                        <li>Sala: A - 218</li>
-                        <li>Horário: 19:00</li>
-                        <li>Docente:MARCELO GIOVEDI FUNKE</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Titulos de Credito e Contratos Empresariais</h3>
-                        <li>Sala: A - 104</li>
-                        <li>Horário: 19:00</li>
-                        <li>Docente:ANDERSON AKIRA WATANABE</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Titulos de Credito e Recuperacao e Falencia de Empresas</h3>
-                        <li>Sala: A - 13</li>
-                        <li>Horário: 21:00</li>
-                        <li>Docente:ANDERSON AKIRA WATANABE</li>
-                    </div><br>
-
-                    <div class="materia">
-                        <h3>Topicos Especiais em Fisioterapia</h3>
-                        <li>Sala: A - 203</li>
-                        <li>Horário: 19:00</li>
-                        <li>Docente: CINTIA REGINA DOS SANTOS RODRIGUES</li>
-                    </div>
-                 </ul>
-             </div>
- 
-             
-         </div><br><br>
-       
-           
-
-        </div>
-    
-       </div><br>
-
-       
-
-   </div>
+  // Função para ocultar informações
+  function ocultarInformacao() {
+    var informacoesDiv = document.getElementById('informacoes');
+    informacoesDiv.innerHTML = ''; // Limpar o conteúdo da div
+    // Resetar o estado dos botões ao ocultar as informações
+    estadoBotao1 = false;
+    estadoBotao2 = false;
+  }
+</script>
 
 </body>
 </html>
