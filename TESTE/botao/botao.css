@@ -46,4 +46,9 @@ ul{
     list-style: none;
 } */
 
+    /* Estilo para ocultar a div inicialmente */
+    #conteudo {
+        display: none;
+      }
+
 
